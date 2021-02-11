@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Using the selection tools</title>
+</head>
+
+<body>
+    <div class="header-and-nav">
+        <header>
+            <a href="./index.html" title="Home">
+                <img class="logo" src="./img/tux.svg" alt="Penguin logo">
+
+                <h1 class="site-name">Creative Image
+                    <br>Editing</h1>
+            </a>
+            <div class="nav-container">
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!">
+                            <span></span>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Session One</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./what-is-an-image.html">About Images</a>
+                                </li>
+                                <li>
+                                    <a href="./photopea-intro.html">Introduction to Photopea</a>
+                                </li>
+                                <li>
+                                    <a href="./basic-editing.html">Basic Editing</a>
+                                </li>
+                                <li>
+                                    <a href="./using-the-text-tool.html">The Text tool</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Session Two</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="./selection-tools.html">Selection tools</a>
+                                </li>
+                                <li>
+                                    <a href="./layers.html">Using Layers</a>
+                                </li>
+
+                                <li>
+                                    <a href="./combining-images.html">Combining Images</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./links.html">Links</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main>
+        <h1>Using the selection tools</h1>
+        <div style="margin-bottom: 2rem;overflow:auto">
+            <img style="float:left; margin-right:3rem;width:32px;height:219px"
+                src="./img/using-selections/selection-tools.jpg"
+                alt="The selection tools buttons highlighted in the tools palette">
+            <p>
+                It is often the case that you just want to work with a part of an image rather than the whole thing.
+                Photopea has a good range
+                of selection tools that allow you to do this. The image on the left shows the tool buttons. Note that
+                each tool button
+                has a small arrow at its bottom right corner that can be clicked to see the tools in that group. The
+                buttons in order are:
+                1) the rectangle and ellipse select tools; 2) the lasso tools; 3) the magic wand and quick select tools.
+            </p>
+        </div>
+
+        <h2>The Rectangle and Ellipse Select Tools</h2>
+        <h3>Rectangle</h3>
+        <p>
+            To use this tool click to the top left of the area of the image you want selected then drag down diagonally
+            to the bottom
+            right and release the mouse button. The selection can be seen to be active by the dashed line around it. The
+            centre of the selection can be clicked on and the selection moved by dragging if
+            necessary. <br>To remove the selection press the key combination <strong>Ctr-d</strong> or use the
+            <strong>Select</strong> menu in the main menu toolbar (Select -> Deselect).</p>
+        <p>The tool has a number of options.</p>
+        <ol>
+            <li>Feathering: the selection is blurred in that some pixels are indefinitely selected leading to a gradual
+                transition
+                from fully selected pixels to unselected ones. The granularity of the change is determined
+                by the value used in the feathering.</li>
+            <li>Constraints: the drawing of the selection is totally Free(hand); a set Ratio (e.g. 4 to 3, 16 to 9), a
+                specific
+                Size (e.g. 600 x 480 pixels)</li>
+        </ol>
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/rectangular-select-no-feather.jpg"
+                alt="A rectangular selection - no feathering">
+            <figcaption>A rectangular selection - no feathering</figcaption>
+        </figure>
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/rectangular-select-feather.jpg"
+                alt="A rectangular selection using feathering">
+            <figcaption>A rectangular selection using feathering - note the rounded corners</figcaption>
+        </figure>
+        <div class="hr"></div>
+
+        <h3>Add to, Subtract from, Intersect with, and Difference from selection options</h3>
+        <p>It is possible to fine-tune a selection using the options bar buttons. The image below shows how the bar
+            looks when
+            any of the selection tools are active. The numbers 1 to 5 have been added to the image for explanatory
+            purposes.</p>
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/selections-options-bar.jpg"
+                alt="The options bar for the selection tools">
+            <figcaption>The options bar for the selection tools</figcaption>
+        </figure>
+        <ol>
+            <li>
+                <strong>No. 1</strong> button is the default option. This means if you select part of an image, and then
+                another
+                part the first part will be deselected. In other words, it is only possible to have one area selected
+                at once.</li>
+            <li>
+                <strong>No. 2</strong> button allows for more than one area to be selected (Add to), and they do not
+                need to overlap.</li>
+            <li>
+                <strong>No. 3</strong> button allows for part of a selected area to be removed by selecting the part
+                that is to be
+                removed (Subtract from).</li>
+            <li>
+                <strong>No. 4</strong> button means if two selections overlap, just the overlapping areas will be
+                selected (Intersect
+                with).
+            </li>
+            <li>
+                <strong>No. 5</strong> button means if two selections overlap, just the areas that
+                <strong>do not</strong> overlap will be selected (Difference from).</li>
+        </ol>
+
+        <p> Below are some examples of using options 2 and 3. Read the image captions for more information.</p>
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/add-to-selection.jpg"
+                alt="Adding pixels to an existing selection">
+            <figcaption>Adding pixels to an existing selection</figcaption>
+        </figure>
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/subtract-from-selection.jpg"
+                alt="Removing pixels from an existing selection">
+            <figcaption>Removing pixels from an existing selection. The original selection was the same as in the image
+                above this one,
+                <br>then a selection was made through the centre of the image resulting in the selection areas in this
+                image.</figcaption>
+        </figure>
+        <div class="hr"></div>
+        <h3>Ellipse</h3>
+        <p>
+            The Ellipse tool works in the same way as the rectangular one except the selection shape is elliptical. The
+            two images below
+            show the selection being 1) applied, and 2) moved using the Move tool. Note that when the selection is moved
+            the
+            blurred feathered edge can be seen and also the checkerboard pattern that indicates that the area where the
+            selection
+            was is now transparent. <br>To remove the selection press the key combination <strong>Ctr-d</strong> or use
+            the <strong>Select</strong> menu in the main menu toolbar (Select -> Deselect).
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/ellipse-select.jpg"
+                alt="Part of the image selected using the ellipse selection tool">
+            <figcaption>Part of the image selected using the ellipse selection tool
+                <br>Note the selection is feathered but the effect can not be seen (until the selection is moved)
+            </figcaption>
+        </figure>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/ellipse-select-feather-moved.jpg"
+                alt="The selection moved using the Move tool">
+            <figcaption>The selection moved using the Move tool. Note the blurring of the edge of the ellipse and the
+                transparent pixels</figcaption>
+        </figure>
+
+        <div class="hr"></div>
+
+        <h2>The Lasso Tools</h2>
+        <h3>Lasso</h3>
+        <p>
+            The lasso tool allows you to draw freehand to make a selection. The selection can be feathered and releasing
+            the mouse button
+            at any point will close the selection. This tool can be used to make a quick selection that does not need to
+            be too accurate. <br>To remove the selection press the key combination <strong>Ctr-d</strong> or use the
+            <strong>Select</strong> menu in the main menu toolbar (Select -> Deselect).
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/image-selected-using-lasso-tool.jpg"
+                alt="Using the lasso tool">
+            <figcaption>Using the Lasso tool to make a quick and rough selection</figcaption>
+        </figure>
+        <h3>Polygonal Lasso</h3>
+        <p>
+            The Polygonal Lasso tool allows you to make a selection around an angular shape by clicking at its corners.
+            Double-clicking at any point will close the selection. It is best to use this tool when the shape
+            being selected is well defined. It can make a more accurate selection than the ordinary Lasso tool, but is
+            usually
+            not as accurate as the Magnetic lasso. <br>To remove the selection press the key combination
+            <strong>Ctr-d</strong> or use the <strong>Select</strong> menu in the main menu toolbar (Select ->
+            Deselect).
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/image-selected-using-polygonal-tool.jpg"
+                alt="Using the Polygonal lasso tool">
+            <figcaption>Using the Polygonal lasso tool</figcaption>
+        </figure>
+
+        <h3>Magnetic Lasso</h3>
+        <p>
+            The Magnetic Lasso will attempt to follow a shape as you trace around it with the mouse. It is best to use
+            this tool when
+            the shape being selected is well defined. Note however that the shape does not need to be angular. The
+            starting
+            point of the selection needs to be clicked and then the mouse button can be released and the mouse moved to
+            trace
+            the shape being selected. At points around the tracing anchor points can be added by clicking. Feathering
+            can
+            be done and double-clicking at any point will close the selection. <br>To remove the selection press the key
+            combination <strong>Ctr-d</strong> or use the <strong>Select</strong> menu in the main menu toolbar (Select
+            -> Deselect).
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/image-selected-using-magnetic-lasso-tool.jpg"
+                alt="Using the magnetic lasso tool">
+            <figcaption>Using the magnetic lasso tool. Note is does a slightly better job around the front tyre and the
+                bumper than the
+                Polygonal lasso tool</figcaption>
+        </figure>
+
+        <div class="hr"></div>
+
+        <h2>The Magic Wand and Quick Select</h2>
+        <h3>Magic Wand</h3>
+        <p>
+            The Magic Wand is very useful when you want to select large areas that have very similar colours. To use it:
+        </p>
+        <ol>
+            <li>Choose the tool by clicking on it - there is an icon that looks like a wand on its button in the editing
+                tools
+                toolbar.
+            </li>
+            <li>Set the feather value to a number above 0 if a fuzzy edge to the selection is wanted.</li>
+            <li>Set the Tolerance - this number governs the range of pixels that are selected. A low number means
+                stricter selections,
+                a higher number means looser selections. A value of 21 is a good number to start with.</li>
+            <li>Tick/untick the Contiguous checkbox - when ticked the selection will spread out from the original
+                "clicked" point,
+                like ripples on a pond, only stopping when a definite colour boundary is reached.</li>
+        </ol>
+        <p>
+            The image below shows a selection that was made when the pink bonnet of the car was clicked somewhere near
+            its centre.
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/magic-wand.jpg"
+                alt="A selection made using the magic wand tool">
+            <figcaption>A selection made using the magic wand tool. Note that some areas have not been selected due to
+                them being outside
+                the colour range tolerance</figcaption>
+        </figure>
+
+        <p>When the wand does not select all of an area that you want it to select the "Add to selection" button in the
+            options
+            bar and continues clicking on the areas you need selected. The image below shows all the car's pink colour
+            selected.</p>
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/magic-wand2.jpg"
+                alt="All the car's pink colour selected using the magic wand tool">
+            <figcaption>All the car's pink colour selected using the Magic Wand tool and the "Add to" option
+            </figcaption>
+        </figure>
+        <div class="hr"></div>
+        <h3>Quick Select</h3>
+        <p>
+            The Quick Select tool (which lives with the Magic Wand) is useful for quickly selecting similar colours. It
+            uses a brush
+            to select colours. To use it select the brush size and hardness and then drag across the areas you want
+            selected.
+            In the image below the selection of the pink colour is not complete. Note the "Unite" and "Subtract" buttons
+            on the options bar. They serve a similar purpose to the "Add to" and "Subtract from" Magic Wand buttons.</p>
+        <p>Also note the Refine Edges button.
+            <strong>This is an advanced tool</strong>. Clicking on it will open a new dialog where selection edges can
+            be fine-tuned
+            by painting them with white, grey or black colours. White removes the selection painted, black adds to it,
+            and
+            grey is similar to white in its operation but is not so severe. In addition the selection border can be
+            increased.
+            Finally the selection can be saved as a New Layer (the default), a path (a vector line), or a selection.
+        </p>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/quick-select.jpg"
+                alt="The Quick Select tool showing its options">
+            <figcaption>The Quick Select tool showing its many options</figcaption>
+        </figure>
+
+        <figure class="image-side-by-side">
+            <img loading="lazy" src="./img/using-selections/quick-select-refine-selection-dialog.jpg"
+                alt="The Quick Select refine edges dialog">
+            <figcaption>The Quick Select refine edges dialog showing its two windows (editable image on the left and
+                result on the right)
+                and options buttons along the top</figcaption>
+        </figure>
+
+        <div class="hr"></div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>

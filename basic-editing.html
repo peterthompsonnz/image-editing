@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  </script>
+  <title>Basic Editing</title>
+</head>
+
+<body>
+  <div class="header-and-nav">
+    <header>
+      <a href="./index.html" title="Home">
+        <img class="logo" src="./img/tux.svg" alt="Penguin logo" />
+
+        <h1 class="site-name">Creative Image <br />Editing</h1>
+      </a>
+      <div class="nav-container">
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!">
+              <span></span>
+            </a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#!">Session One</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="./what-is-an-image.html">About Images</a>
+                </li>
+                <li>
+                  <a href="photopea-intro.html">Introduction to Photopea</a>
+                </li>
+                <li>
+                  <a href="./basic-editing.html">Basic Editing</a>
+                </li>
+                <li>
+                  <a href="./using-the-text-tool.html">The Text tool</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Session Two</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="./selection-tools.html">Selection tools</a>
+                </li>
+                <li>
+                  <a href="./layers.html">Using Layers</a>
+                </li>
+
+                <li>
+                  <a href="./combining-images.html">Combining Images</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./links.html">Links</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main>
+    <h1>Basic Image Editing</h1>
+    <p>
+      It is good practice when taking images from a digital camera or phone to
+      do some basic editing before storing them. The steps involved in this
+      are:
+    </p>
+    <ol>
+      <li>
+        Decide whether you want to keep the image or if you are going to
+        delete it
+      </li>
+      <li>Crop the image if necessary</li>
+      <li>Resize the image if necessary</li>
+      <li>
+        Adjust the colour balance using the <strong>Levels</strong> adjustment
+        tool
+      </li>
+      <li>Sharpen the image if necessary</li>
+      <li>Save the image using a descriptive name as a jpeg or png</li>
+    </ol>
+    <p>Most of these steps are covered in some detail below.</p>
+    <h2>Crop the Image</h2>
+    <p>
+      Cropping is used to remove unwanted areas of an image and emphasise the
+      part(s) you want the viewer to concentrate on. Below is an image that
+      shows a cropping grid over an image. Adjusting the edges of the grid so
+      one of its crosspoints is over the part you want to emphasise/draw the
+      eye to is the aim. Research has shown that the human eye is naturally
+      drawn to these areas of an image. In the image it can be seen that the
+      seashell is intended to be the subject because of where the lines
+      intersect. Clicking on the image will open an article on the "Rule of
+      Thirds" that is involved cropping method. Unfortunately Photopea does
+      not show a grid when the cropping tool is being used.
+    </p>
+    <figure class="image-side-by-side">
+      <a href="https://www.itsjustlight.com/photography-tips/what-is-the-rule-of-thirds-photography/" target="_blank">
+        <img src="https://www.itsjustlight.com/wp-content/uploads/2015/06/beach-photography-rule-of-thirds-example.jpg"
+          alt="Cropping an image using the rule of thirds" />
+      </a>
+      <figcaption>Cropping using the rule of thirds grid</figcaption>
+    </figure>
+    <p>
+      Below are two images showing the cropping tool in action. Note the
+      cropping grid has small squares at its corners and in the middle of each
+      side. These can be clicked on and dragged by the mouse to adjust the
+      cropping area. Once the cropping grid is correct, pressing the Enter key
+      will make the crop. Note there are additional options in the cropping
+      tool's options bar. For instance the "Tick" or "Cross" can be used to
+      confirm or exit the crop. Experiment with these.
+    </p>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/cropping-tool1.jpg" alt="The cropping tool after adjusting" />
+      <figcaption>The cropping tool after adjusting</figcaption>
+    </figure>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/cropping-tool2.jpg" alt="The cropped image" />
+      <figcaption>The cropped image</figcaption>
+    </figure>
+
+    <h2>Image Resizing</h2>
+    <p>
+      The next step is to resize the image if you think it is too big. Too big
+      is a matter of opinion. For example if you are emailing the image you
+      may want it to have a width of say 600 pixels. If you are storing it on
+      your computer and you have plenty of disk space you could be happy with
+      a width of 2000 pixels. The example image used below has a width of 2000
+      pixels so could be resized to a width of 600 pixels for emailing
+      purposes.
+    </p>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/image-menu.png" alt="Image menu dropdown menu" />
+      <figcaption>Image menu dropdown</figcaption>
+    </figure>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/image-resize-dialog.jpg" alt="The cropped image" />
+      <figcaption>Image resizing dialog</figcaption>
+    </figure>
+
+    <h2>Levels (adjusting dynamic range of colours)</h2>
+    <p>
+      The levels dialog allows the dynamic range of colours to be adjusted.
+      The goal is to have a better spread across the colour spectrum. The
+      histogram in the dialog shows the spread of pixels from dark on the
+      left-hand end to light on the right. The square handles below the
+      histogram can be dragged to adjust the range spread. The rule of thumb
+      is to adjust the handles so they are below the point where the histogram
+      "mountain" starts to climb. In the images below you can see that the
+      left-hand end one can be moved right a little and this improves the
+      richness of the image's colour. The middle handle adjusts the middle
+      tones of the image.
+    </p>
+    <p>
+      The handles below the slider bar allow the amount of light and dark
+      pixels that will be in the adjusted image to be altered. For example, if
+      the left-hand one is dragged right some of the darker pixels will be
+      discarded so the image as a whole will be lightened. This is one way of
+      creating a watermark image.
+    </p>
+
+    <h2>Sharpen the image</h2>
+    <p>
+      Depending on the quality of the camera that takes an image, and to a
+      lesser extent the focus point, an image can lack definition. Also,
+      resizing an image can cause lack of definition or fuzziness as well. If
+      this is the case then sharpening can be beneficial. Put simply,
+      sharpening takes the difference between neighbouring dark and light
+      pixels and extenuates it. This has the effect of making the image "pop"
+      or standout more. The images below show how to sharpen an image. Note
+      that there are three sharpening tools. Using the "Unsharp mask" one
+      gives most control.
+    </p>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/sharpening-menu.jpg" alt="The sharpening menu items" />
+      <figcaption>The sharpening tools menu</figcaption>
+    </figure>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/sharpening-dialog.jpg" alt="The unsharp mask dialog" />
+      <figcaption>The Unsharp mask dialog</figcaption>
+    </figure>
+    <p>
+      The Unsharp mask dialog has three adjustments. The
+      <strong>Amount</strong> slider controls how much sharpness is applied.
+      The <strong>Radius</strong> controls how many neighbouring pixels are
+      involved in how much each pixel is sharpened. The
+      <strong>Threshold</strong> controls at what point sharpening starts.
+      This is to allow small imperfections in an image to remain unsharpened
+      and so not stand out. It is best to leave the Radius and Threshold
+      settings at their default. The second image above shows that the image
+      has been sharpened by 50%. This figure does not equate to an exact value
+      as it is possible to sharpen an image more than 100%. As 50% is quite a
+      low value the effect on the image is slight, though there is a
+      noticeable better definition of the lion's coat.
+    </p>
+    <h2>Saving the Image</h2>
+    <p>
+      Once all the adjustments have been made the image can be saved. It may
+      be a good idea to save the adjusted image in a different folder to the
+      one in which the original image came from. Images should be
+      descriptively named. When ready to save an image choose "Export as"
+      under the "File" menu on the main menu bar. A flyout menu will appear
+      giving file type options. Choose "jpg" for multi-coloured images e.g.
+      photos, or "png" if you want all image data to be saved. This is because
+      the jpeg storage format always throws away some image data in order to
+      lower the file size (its lossey), whereas png preserves data (lossless).
+    </p>
+    <p>
+      >Once the Save dialog opens a preview of the image will appear in the
+      dialog at left (zoom can be adjusted by rolling the middle mouse wheel).
+      The preview is live so changes to dialog settings, e.g. Quality, will
+      update in real time. Underneath this the image zoom level is shown as
+      well as the current "save" file size of the image according to what: 1)
+      file type/format has been chosen; 2) its width and height (this can be
+      changed to resize the image); 3) quality setting - adjusting this
+      effects both the file size and the image's quality. Once you are happy
+      with the settings click Save and by default the image will be saved in
+      the web browser's default Downloads folder.
+    </p>
+
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/save-menu.jpg" alt="The export menu" />
+      <figcaption>The export menu</figcaption>
+    </figure>
+    <figure class="image-side-by-side">
+      <img loading="lazy" src="./img/basic-editing/save-for-web-dialog.jpg" alt="The save dialog" />
+      <figcaption>The save dialog</figcaption>
+    </figure>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

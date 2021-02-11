@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Introduction to Photopea</title>
+  </head>
+
+  <body>
+    <div class="header-and-nav">
+      <header>
+        <a href="./index.html" title="Home">
+          <img class="logo" src="./img/tux.svg" alt="Penguin logo" />
+
+          <h1 class="site-name">Creative Image <br />Editing</h1>
+        </a>
+        <div class="nav-container">
+          <nav>
+            <div class="nav-mobile">
+              <a id="nav-toggle" href="#!">
+                <span></span>
+              </a>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="#!">Session One</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="./what-is-an-image.html">About Images</a>
+                  </li>
+                  <li>
+                    <a href="./photopea-intro.html">Introduction to Photopea</a>
+                  </li>
+                  <li>
+                    <a href="./basic-editing.html">Basic Editing</a>
+                  </li>
+                  <li>
+                    <a href="./using-the-text-tool.html">The Text tool</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">Session Two</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="./selection-tools.html">Selection tools</a>
+                  </li>
+                  <li>
+                    <a href="./layers.html">Using Layers</a>
+                  </li>
+
+                  <li>
+                    <a href="./combining-images.html">Combining Images</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./links.html">Links</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <main>
+      <h1>Introduction to Photopea</h1>
+      <p>
+        Below is an image of Photopea with labels that indicate the most
+        important parts of its interface. Here is a link to a tutorial written
+        by its developer that explains how to use it:
+        <a href="https://www.photopea.com/learn/" title="Photopea tutorial"
+          >Photopea tutorial</a
+        >
+      </p>
+      <figure class="image-side-by-side">
+        <img loading="lazy" src="./img/photopea-intro/photopea-ui.jpg" alt="Photopea UI" />
+        <figcaption>Photopea user interface</figcaption>
+      </figure>
+      <h2>Menu bar</h2>
+      <p>
+        The menu bar is similar to that used in other applications in that the
+        item names are fairly explainatory e.g. File, Edit. Clicking on an menu
+        item will cause a dropdowm menu to appear. In turn some of these have
+        sub-menues.
+      </p>
+      <h2>Selected tool Options bar</h2>
+      <p>
+        When a tool is selected its options will be displayed in the
+        <strong>Selected tool options</strong> toolbar.
+      </p>
+      <h2>Editing tools</h2>
+      <p>
+        The Editing tools allow you to manipulate images in many ways. The
+        graphic for each tool gives and indication of its purpose e.g. a brush
+        icon indicates the brush tool. Also, if you hover over a tool for a
+        second or so a notice will pop up showing the tool's name. Some icons
+        have a small arrow at their bottom right corner. This indicates that
+        there are more (hidden) options. These can be seen by clicking on the
+        small arrow.
+      </p>
+      <h2>Image display area</h2>
+      <p>
+        This is where the image (or parts of it) being worked on is displayed.
+        Any changes that you make to the image will appear here in real time.
+      </p>
+      <h2>Collapsible information dialogs</h2>
+      <p>
+        When working on an image clicking on these buttons will cause a dialog
+        to fly out. The dialogs display various properties and can be used to
+        fine-tune some of the tool effects e.g. The
+        <strong>Cha</strong> or Character and paragraph dialog allows the
+        spacing between text characters to be adjusted when working with a text
+        layer.
+      </p>
+      <h2>History dialog</h2>
+      <p>
+        The History dialog displays in an ordered list all the steps you have
+        taken when working on an image. The latest change will be at the bottom.
+        To revert to the open state of the image click on the item at the very
+        top of the list. Clicking on any item will cause the image to revert its
+        state. The key combination Ctrl+z (or Command+z on a Mac) is a quick way
+        to step back one step in history. Ctrl+y redoes an undone move.
+      </p>
+      <h2>Layers, blending modes, and opacity dialog</h2>
+      <p>
+        You will find yourself working a lot with this dialog. An image can be
+        worked on using a layering approach. Image layers can be likened to
+        layers in a cake. An image as a whole is a combination of its layers and
+        the effect they contribute. Layers can be used in many creative ways. It
+        is best to learn their use through practice.
+      </p>
+      <p>
+        There are many available blending modes. Blending modes work by
+        integrating the layer that has the blending mode set on it with those
+        below it. For example they can be used to strengthen an image (multiply
+        blending mode), and tint an image (screen or overlay mode).
+      </p>
+      <p>
+        The opacity control adjusts the "see-throughness" of the layer that is
+        selected. This can be used to fine-tune a blending effect.
+      </p>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
